@@ -90,6 +90,11 @@ button{
   padding: 0.55rem;
   cursor: pointer;
  }
+ svg{
+  
+  font-size: 22px;
+
+ }
  @media only screen and (max-width: 600px) {
  .Todolist{
   margin-top: 18px;

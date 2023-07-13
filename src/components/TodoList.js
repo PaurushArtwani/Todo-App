@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { AiOutlineEdit } from "react-icons/ai";
 
 const TodoList = (props) => {
   const [editMode, setEditMode] = useState(false);
@@ -43,16 +45,16 @@ const TodoList = (props) => {
         <p className="Todolist">
           {props.item}
           <span className="icons">
-            <i
+            <AiOutlineEdit
               className="fa-solid fa-pen-to-square edit-button"
               onClick={handleEdit}
-            ></i>
-            <i
+            />
+            <RiDeleteBin6Line
               className="fa-solid fa-trash-can"
               onClick={() => {
                 props.deleteItem(props.index);
               }}
-            ></i>
+            />
           </span>
         </p>
       )}
